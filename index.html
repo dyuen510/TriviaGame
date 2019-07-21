@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <h1> Coffee Trivia</h1>
+    <button id="start"> Start </button>
+
+    <form id = "hidden">
+    <p>Time Remaining: <span id="time"> </span></p>
+
+    
+   <p>What is the name of the vegan coffee shop located in Piedmont Ave in Oakland?
+    <br>
+    <input type="radio" name="vegan" value="wrong">Peet's Coffee</input>
+    <input type="radio" name="vegan" value="wrong">Blue Bottle</input>
+    <input type="radio" name="vegan" value="right">Timeless Coffee</input>
+    <input type="radio" name="vegan" value="wrong">Bicycle Coffee</input>
+    </p> 
+
+    <br>
+    <p>
+    Which coffee shop has a cafe named specialty?
+    <br>
+    <input type="radio" name="cafe" value="wrong">Starbuck's</input>
+    <input type="radio" name="cafe" value="wrong">Philz Coffee</input>
+    <input type="radio" name="cafe" value="wrong">Stumptown</input>
+    <input type="radio" name="cafe" value="right">Peet's Coffee</input>
+    </p>    
+    <br>
+    <input id="submit" type="submit" value="submit">
+    <p id="content"></p>
+</form>
+
+    <div id= "end">
+        <p> ALL DONE!</p>
+        <p>Correct Answers:<span id ="correct"></span></p>
+        <p>Wrong Answers:<span id = "wrong"></span></p>
+        <p>Unanswered:<span id= "unanswered"></span></p>
+    </div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="assets/javascript/app.js"></script>  
+
+</body>
+
+</html>
