@@ -1,4 +1,4 @@
-var counter = 20;
+var counter = 30;
 
 $('#start').on('click',function(){
     var play = setInterval(decrement, 1*1000);
@@ -17,6 +17,7 @@ function decrement(){
         $('#hidden').hide();
         $('#finish').hide();
         $('#end').show();
+        $('iframe').show();
         pointScore();
     }
 $('#submit').on('click',function(){
@@ -24,6 +25,7 @@ $('#submit').on('click',function(){
     $(this).attr('disabled',true);
     $('#hidden').hide();
       $('#end').show();
+      $('iframe').show();
       pointScore();
 })
 
@@ -131,3 +133,4 @@ $('#time').text(counter);
 
 
 }
+

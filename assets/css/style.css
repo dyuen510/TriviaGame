@@ -4,4 +4,52 @@
 
 #end{
     display:none;
+    font-style:italic;
+}
+body{
+    background:url("../images/coffee.jpeg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    
+}
+
+#content{
+    color:darkred;
+    font-size:40px;
+}
+
+#main{
+    background-color: gainsboro;
+    text-align:center;
+    border: 1px solid black;
+    margin:280px;
+    margin-top:20px;
+    padding-bottom:30px;
+}
+
+#submit, #start{
+    width:120px;
+    height:40px;
+    font-size:30px;
+    font-weight:bold;
+    border:1px solid black;
+    color:burlywood;
+}
+
+h1{
+    font-size:60px;
+    color:brown;
+}
+
+#time{
+    font-size:30px;
+    color:red;
+    font-weight:bold;
+}
+#remain{
+    font-size:30px;
+}
+iframe{
+    display:none;
+    margin-left:150px;
 }
