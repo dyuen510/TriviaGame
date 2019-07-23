@@ -67,8 +67,11 @@ iframe{
     }
     iframe{
         position:relative;
-        right:80px;
-        margin:0px;
+        right:40px;
+        margin:30px;
+    }
+    input{
+        font-size:15px;
     }
 
 } 
