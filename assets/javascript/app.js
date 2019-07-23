@@ -5,6 +5,7 @@ $('#start').on('click',function(){
     decrement();
     $('#hidden').show();
     $('#start').hide();
+    $('#pic').hide();
 })
 function decrement(){
     

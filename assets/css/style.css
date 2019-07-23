@@ -51,27 +51,35 @@ h1{
 }
 iframe{
     display:none;
-    margin-left:150px;
+    position:relative;
+    left:180px;
+   
+}
+#pic{
+    position:relative;
+    left:350px;
+    bottom:250px;
 }
 @media screen and (max-device-width: 480px) and (orientation:portrait) {
     #main{
        width:95%;
+       position:fixed;
     }
     iframe{
-        margin-right:80px;
+       position:relative;
+       left:150px;
     }
     #submit{
         width:150px;
         text-align:center;
         font-size:25px;
     }
-    iframe{
-        position:relative;
-        right:40px;
-        margin:30px;
-    }
+   
     input{
         font-size:15px;
+    }
+    #pic{
+        
     }
 
 } 
@@ -83,17 +91,29 @@ iframe{
         margin-right:30px;
         padding:15px;
         margin-top:120px;
+        
+        
     }
     iframe{
        position:relative;
-       right:80px;
+       right:150px;
+       margin-right:80px;
        
     }
-    body{
-        background-size:cover;
-        margin-bottom:100%
+    #pic{
+        margin:0px;
+        overflow:none;
+        position:relative;
+        top:50px;
+        right:2000px;
     }
-}
+    body{
+        background:cover;
+        margin-bottom:100%;
+    }
+
+
+
 
 
 
