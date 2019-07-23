@@ -63,7 +63,6 @@ iframe{
 @media screen and (max-device-width: 480px) and (orientation:portrait) {
     #main{
        width:95%;
-       position:fixed;
     }
     iframe{
        position:relative;
