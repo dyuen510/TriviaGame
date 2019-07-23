@@ -60,6 +60,13 @@ iframe{
     iframe{
         margin-right:80px;
     }
+    #submit{
+        width:150px;
+    }
+    iframe{
+        position:relative;
+        right:80px;
+    }
 
 } 
 
