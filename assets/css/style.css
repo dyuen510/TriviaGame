@@ -62,10 +62,13 @@ iframe{
     }
     #submit{
         width:150px;
+        text-align:center;
+        font-size:25px;
     }
     iframe{
         position:relative;
         right:80px;
+        margin:0px;
     }
 
 } 
