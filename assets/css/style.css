@@ -10,6 +10,7 @@ body{
     background:url("../images/coffee.jpeg");
     background-repeat:no-repeat;
     background-size:cover;
+    width:1100px;
     
 }
 
@@ -22,9 +23,10 @@ body{
     background-color: gainsboro;
     text-align:center;
     border: 1px solid black;
-    margin:280px;
+    margin:200px;
     margin-top:20px;
     padding-bottom:30px;
+    width:95%;
 }
 
 #submit, #start{
@@ -51,22 +53,21 @@ h1{
 }
 iframe{
     display:none;
-  
+    margin-left:400px;
    
 }
-/*#pic{
-    position:relative;
-    left:450px;
-    bottom:250px;
+#pic{
+    margin-left:500px;
 }
-*/
-@media screen and (max-device-width: 480px) and (orientation:portrait) {
+
+/*@media screen and (max-device-width: 480px) and (orientation:portrait) {
     #main{
-        width:100%;
+        width:90%;
         margin-left:0px;
     }
     iframe{
-       margin-right:80px;
+       position:relative;
+       left:80px;
     }
     #submit{
         width:150px;
@@ -113,6 +114,9 @@ iframe{
     #main{
         width:95%;
     }
+    #pic{
+        width:90px
+    }
 
 }
 
@@ -122,11 +126,12 @@ iframe{
        overflow:auto;
        width:70%;
        margin-left:200px;
-       
+   }
+   body{
+       background-color:blue;
    }
    #pic{
-    position:relative;
-    left:30%;
+   
     bottom:140px;
    }
    iframe{
