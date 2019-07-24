@@ -51,22 +51,23 @@ h1{
 }
 iframe{
     display:none;
-    position:relative;
-    left:180px;
+  
    
 }
-#pic{
+/*#pic{
     position:relative;
-    left:350px;
+    left:450px;
     bottom:250px;
 }
+*/
 @media screen and (max-device-width: 480px) and (orientation:portrait) {
     #main{
-       width:95%;
+        width:100%;
+        margin-left:0px;
     }
     iframe{
        position:relative;
-       left:150px;
+       left:80px;
     }
     #submit{
         width:150px;
@@ -74,10 +75,12 @@ iframe{
         font-size:25px;
     }
    
-    input{
-        font-size:15px;
-    }
+ 
     #pic{
+       position:relative;
+       right:90px;
+       margin:0;
+
         
     }
 
@@ -85,32 +88,53 @@ iframe{
 
 @media screen and (max-width:640px){
     #main{
-        width:90%;
-        margin:5px;
-        margin-right:30px;
-        padding:15px;
+        width:98%;
+        margin-left:10px;
         margin-top:120px;
-        
-        
+    
     }
     iframe{
        position:relative;
-       right:150px;
-       margin-right:80px;
-       
+       left:80px;
     }
     #pic{
-        margin:0px;
-        overflow:none;
+        margin-right:100px;
         position:relative;
-        top:50px;
-        right:2000px;
+        bottom:260px;
+        right:70px;
+        width:90%;
     }
     body{
         background:cover;
         margin-bottom:100%;
     }
+    
+}
+@media screen and (max-width:768px){
+    #main{
+        width:95%;
+    }
 
+}
+
+@media screen and (min-width:960px){
+
+   #main{
+       overflow:auto;
+       width:70%;
+       margin-left:200px;
+       
+   }
+   #pic{
+    position:relative;
+    left:30%;
+    bottom:140px;
+   }
+   iframe{
+       position:relative;
+       left:320px;
+   }
+}
 
 
 
