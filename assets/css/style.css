@@ -66,8 +66,7 @@ iframe{
         margin-left:0px;
     }
     iframe{
-       position:relative;
-       left:80px;
+       margin-right:80px;
     }
     #submit{
         width:150px;
