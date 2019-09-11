@@ -54,7 +54,6 @@ h1{
 iframe{
     display:none;
     margin-left:400px;
-   
 }
 #pic{
     margin-left:450px;
@@ -66,20 +65,19 @@ iframe{
         margin-left:0px;
     }
     iframe{
-       position:relative;
-       left:80px;
+        position:relative;
+        /* left:80px; */
     }
     #submit{
         width:150px;
         text-align:center;
         font-size:25px;
     }
-   
- 
+
     #pic{
-       position:relative;
-       right:90px;
-       margin:0;
+        position:relative;
+        right:90px;
+        margin:0;
 
         
     }
@@ -95,7 +93,9 @@ iframe{
     
     }
     iframe{
-       position:relative;
+        position:relative;
+        top:30px;
+        right:280px;
     }
     #pic{
         margin-right:100px;
