@@ -1,135 +1,135 @@
-var counter = 30;
+let counter = 30;
 
-$('#start').on('click',function(){
-    var play = setInterval(decrement, 1*1000);
+$('#start').on('click', (e) => {
+    let play = setInterval(decrement, 1 * 1000);
     decrement();
     $('#hidden').show();
     $('#start').hide();
     $('#pic').hide();
 })
-function decrement(){
-    
-    if(counter>0){
-    counter--;
-    $('#time').text(counter); 
-    }else if(counter==0){
+
+const decrement = () => {
+    if (counter > 0) {
+        counter--;
+        $('#time').text(counter);
+    } else if (counter == 0) {
         $('#content').text('Timer is Up!');
-        $('#submit').attr('disabled',true);
+        $('#submit').attr('disabled', true);
         $('#hidden').hide();
         $('#finish').hide();
         $('#end').show();
         $('iframe').show();
         pointScore();
     }
-$('#submit').on('click',function(){
-    $(this).attr('value','please wait...');
-    $(this).attr('disabled',true);
-    $('#hidden').hide();
-      $('#end').show();
-      $('iframe').show();
-      pointScore();
-})
+    $('#submit').on('click', function() {
+        $(this).attr('value', 'please wait...');
+        $(this).attr('disabled', true);
+        $('#hidden').hide();
+        $('#end').show();
+        $('iframe').show();
+        pointScore();
+    })
 
 
-      function pointScore(){
-      var correctPoint=0;
-      var incorrectPoint=0;
-      var noneAnswer=0;
-        
+    const pointScore = () => {
+        let correctPoint = 0;
+        let incorrectPoint = 0;
+        let noneAnswer = 0;
+
 
         $('#correct').text(correctPoint);
         $('#wrong').text(incorrectPoint);
         $('#unanswered').text(noneAnswer);
         $('#time').text(counter);
-   
-		var ansOne = $("input[name='vegan']:checked").val();
-    
-		if (ansOne == 'right'){
+
+        let ansOne = $("input[name='vegan']:checked").val();
+
+        if (ansOne == 'right') {
             correctPoint++;
             $('#correct').text(correctPoint);
-		}else if (ansOne == 'wrong'){
+        } else if (ansOne == 'wrong') {
             incorrectPoint++;
             $('#wrong').text(incorrectPoint);
-        }else{
+        } else {
             noneAnswer++;
             $('#unanswered').text(noneAnswer);
         }
 
-        var ansTwo = $("input[name='cafe']:checked").val();
-        if(ansTwo =='right'){
+        let ansTwo = $("input[name='cafe']:checked").val();
+        if (ansTwo == 'right') {
             correctPoint++;
             $('#correct').text(correctPoint);
-		}else if (ansTwo == 'wrong'){
+        } else if (ansTwo == 'wrong') {
             incorrectPoint++;
             $('#wrong').text(incorrectPoint);
-        }else{
-            noneAnswer++;
-            $('#unanswered').text(noneAnswer);
-        }
-        
-        var ansThree = $("input[name='first']:checked").val();
-        if(ansThree =='right'){
-            correctPoint++;
-            $('#correct').text(correctPoint);
-		}else if (ansThree == 'wrong'){
-            incorrectPoint++;
-            $('#wrong').text(incorrectPoint);
-        }else{
+        } else {
             noneAnswer++;
             $('#unanswered').text(noneAnswer);
         }
 
-        var ansFour = $("input[name='sweet']:checked").val();
-        if(ansFour =='right'){
+        let ansThree = $("input[name='first']:checked").val();
+        if (ansThree == 'right') {
             correctPoint++;
             $('#correct').text(correctPoint);
-		}else if (ansFour == 'wrong'){
+        } else if (ansThree == 'wrong') {
             incorrectPoint++;
             $('#wrong').text(incorrectPoint);
-        }else{
+        } else {
             noneAnswer++;
             $('#unanswered').text(noneAnswer);
         }
 
-        var ansFive = $("input[name='purchase']:checked").val();
-        if(ansFive =='right'){
+        let ansFour = $("input[name='sweet']:checked").val();
+        if (ansFour == 'right') {
             correctPoint++;
             $('#correct').text(correctPoint);
-		}else if (ansFive == 'wrong'){
+        } else if (ansFour == 'wrong') {
             incorrectPoint++;
             $('#wrong').text(incorrectPoint);
-        }else{
+        } else {
             noneAnswer++;
             $('#unanswered').text(noneAnswer);
         }
 
-        var ansSix = $("input[name='grow']:checked").val();
-        if(ansSix =='right'){
+        let ansFive = $("input[name='purchase']:checked").val();
+        if (ansFive == 'right') {
             correctPoint++;
             $('#correct').text(correctPoint);
-		}else if (ansSix == 'wrong'){
+        } else if (ansFive == 'wrong') {
             incorrectPoint++;
             $('#wrong').text(incorrectPoint);
-        }else{
+        } else {
             noneAnswer++;
             $('#unanswered').text(noneAnswer);
         }
 
-        var ansSeven = $("input[name='poop']:checked").val();
-        if(ansSeven =='right'){
+        let ansSix = $("input[name='grow']:checked").val();
+        if (ansSix == 'right') {
             correctPoint++;
             $('#correct').text(correctPoint);
-		}else if (ansSeven == 'wrong'){
+        } else if (ansSix == 'wrong') {
             incorrectPoint++;
             $('#wrong').text(incorrectPoint);
-        }else{
+        } else {
             noneAnswer++;
             $('#unanswered').text(noneAnswer);
         }
-       
-      }
-    
-$('#time').text(counter);  
+
+        let ansSeven = $("input[name='poop']:checked").val();
+        if (ansSeven == 'right') {
+            correctPoint++;
+            $('#correct').text(correctPoint);
+        } else if (ansSeven == 'wrong') {
+            incorrectPoint++;
+            $('#wrong').text(incorrectPoint);
+        } else {
+            noneAnswer++;
+            $('#unanswered').text(noneAnswer);
+        }
+
+    }
+
+    $('#time').text(counter);
 
 
 
