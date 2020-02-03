@@ -1,6 +1,8 @@
 # TriviaGame
 
-<strong> Instructions </strong>
+<h3><strong> Instructions </strong></h3>
+<br>
+<br>
 Once the user clicks start. User will have 30 seconds to answer seven questions related to coffee since the theme of this specific trivia game is coffee. Once submit or when the time runs out, the score will be displayed to the user. The points will be tallied up as correct, incorrect or unanswered. 
 
 Shown below is a glimpse of the trivia board. 
