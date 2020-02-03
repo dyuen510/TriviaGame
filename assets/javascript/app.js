@@ -21,7 +21,8 @@ const decrement = () => {
         $('iframe').show();
         pointScore();
     }
-    $('#submit').on('click', function() {
+    $('#submit').on('click', (e) => {
+        e.preventDefault();
         $(this).attr('value', 'please wait...');
         $(this).attr('disabled', true);
         $('#hidden').hide();
