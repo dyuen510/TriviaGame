@@ -10,7 +10,8 @@ body{
     background:url("../images/coffee.jpeg");
     background-repeat:no-repeat;
     background-size:cover;
-    width:1100px;
+    width:65%;
+    opacity:0.9;
     
 }
 
@@ -53,11 +54,9 @@ h1{
 }
 iframe{
     display:none;
-    margin-left:400px;
+    margin-left:30%;
 }
-#pic{
-    margin-left:450px;
-}
+
 
 @media screen and (max-device-width: 480px) and (orientation:portrait) {
     #main{
@@ -74,14 +73,6 @@ iframe{
         font-size:25px;
     }
 
-    #pic{
-        position:relative;
-        right:90px;
-        margin:0;
-
-        
-    }
-
 } 
 
 @media screen and (max-width:640px){
@@ -92,18 +83,11 @@ iframe{
         margin-right:5px;
     
     }
-    iframe{
+    /* iframe{
         position:relative;
         top:30px;
         right:280px;
-    }
-    #pic{
-        margin-right:100px;
-        position:absolute;
-        top:500px;
-        right:20px;
-        width:90%;
-    }
+    } */
     body{
         background:cover;
         margin-bottom:100%;
